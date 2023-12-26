@@ -2,7 +2,7 @@ name: CI
 
 on:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "*/10 * * * *"
 
 jobs:
   build:
@@ -30,8 +30,3 @@ jobs:
 
       - name: Create Tunnel
         run: .\ngrok\ngrok.exe tcp 3389
-
-      - name: Schedule Next Run
-        run: |
-          sleep 3600  # Sleep for 1 hour
-          echo "Scheduling the next run..."
