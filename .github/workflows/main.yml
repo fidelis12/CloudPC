@@ -2,7 +2,7 @@ name: CI
 on: [push, workflow_dispatch]
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: windows-11
     timeout-minutes: 360  # Set the timeout to 6 hours
     steps:
     - name: Download
