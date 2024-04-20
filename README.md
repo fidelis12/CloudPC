@@ -1,4 +1,5 @@
 # CloudPC
+Network Speed: 5GB per sec
 Copy the github workflow file main.yaml
 Set env variable value for NGROK_AUTH_TOKEN :
 ```
